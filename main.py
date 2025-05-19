@@ -11,16 +11,17 @@ x = datetime.datetime.now()
 local_timezone = datetime.datetime.now(pytz.)
 
 
-'''Create a var url to store the API GET request link with base_url with all the required data
+'''
 TODO; 
 - Make it international, so that people can just enter the name of their country 
 and (or) the Method(calculation method but just the country is enough since it defaults to the nearest closest
-authority based on the location, still give users the option to change the Method)
-- Code to get the local timezone of the user(using PYTZ library) and update it to the timezonestring variable. 
+authority based on the location, still give users the option to change the Method MAXIMUM FREEDOM!)
+- implement Code to get the local timezone of the user(using PYTZ library) and update it to the timezonestring variable. 
 ''' 
 
 def get_adhan_timings():
-    
+
+    #Create a var url to store the API GET request link with base_url with all the required data.
     url = f"{base_url}/timingsByCity/{x}?city=chennai&country=India&timezonestring=Asia/Kolkata"
     global response
    
