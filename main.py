@@ -8,7 +8,7 @@ base_url = "https://api.aladhan.com/v1"
 #fetch the current date and time from the system and format it to fit the API formats
 x = datetime.datetime.now()
 
-local_timezone = x(pytz)
+local_timezone = datetime.datetime.now(pytz.)
 
 
 '''Create a var url to store the API GET request link with base_url with all the required data
