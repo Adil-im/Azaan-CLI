@@ -10,4 +10,3 @@
 - daily To-Pray checklist
 - salah notification reminder
 
-	

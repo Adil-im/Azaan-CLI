@@ -8,7 +8,6 @@ base_url = "https://api.aladhan.com/v1"
 #fetch the current date and time from the system and format it to fit the API formats
 x = datetime.datetime.now()
 
-local_timezone = datetime.datetime.now(pytz.)
 
 
 '''
@@ -39,10 +38,29 @@ adhan =  get_adhan_timings()
 
 # will get an error if you change Timezonestring to some other format. FOLLOW THE FORMAT BIG BOI!
 print(adhan['data']['timings'])
-Timings = []
 
-for i in adhan["data"]:
-    Timings.append(["timings"])
+cmd = str(input("Enter a Command: "))
+Timings = adhan ['data']['timings']
+
+
+if(cmd == "Fajr"):
+    print("Fajr -", Timings["Fajr"])
+elif(cmd == "Dhuhr"):
+    print("Dhuhr -", Timings["Dhuhr"])
+elif(cmd == "Asr"):
+    print("Asr - ", Timings["Asr"])
+elif(cmd == "Maghrib"):
+    print("Maghrib -", Timings['Maghrib'])
+elif(cmd == "Isha"):
+    print("Isha - ", Timings['Isha'])
+else:
+    print("invalid Command")
+    print("Available commands are:  Fajr, Dhuhr, Asr, Maghrib, Isha")
+
+
+
+
+
 
 
 
